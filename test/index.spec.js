@@ -10,7 +10,7 @@ const PORT = process.env.PORT_NUMBER;
 describe('Example Node Server', () => {
   it('should return 200', done => {
     http.get(`http://localhost:${PORT}`, res => {
-      assert.strictEqual(PORT, res.statusCode);
+      assert.strictEqual(200, res.statusCode);
       server.close();
       done();
     });
