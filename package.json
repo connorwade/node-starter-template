@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "tsc && node lib/index.js",
-    "format": "rome format src/",
+    "format": "rome format --write src/",
     "lint": "rome check src/",
     "lint:fix": "rome check src/ --apply",
     "prepare": "husky install",
