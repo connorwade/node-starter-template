@@ -3,7 +3,10 @@
         "module": "ESNext",
         "target": "ES2015",
         "outDir": "lib",
-        "sourceMap": true
+        "sourceMap": true,
+        "moduleResolution": "node"
     },
-    "include": ["src/**/*"]
+    "include": [
+        "src/**/*"
+    ]
 }
