@@ -1,12 +1,15 @@
 {
     "compilerOptions": {
-        "module": "ESNext",
-        "target": "ES2015",
-        "outDir": "lib",
-        "sourceMap": true,
-        "moduleResolution": "node"
+        "module": "CommonJS",
+        "target": "ES2016",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true,
     },
-    "include": [
-        "src/**/*"
+    "exclude": [
+        "node_modules",
+        "lib",
+        "test"
     ]
 }
