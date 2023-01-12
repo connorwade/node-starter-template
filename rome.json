@@ -8,6 +8,9 @@
         "ignore": []
     },
     "linter": {
-        "enabled": true
+        "enabled": true,
+        "ignore": [
+            "lib"
+        ]
     }
 }
