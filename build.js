@@ -1,23 +1,18 @@
 const { build } = require("esbuild");
-const { Generator } = require("npm-dts");
 const { devDependencies } = require("./package.json");
-
-new Generator({
-	entry: "src/index.ts",
-	output: "lib/index.d.ts",
-}).generate();
 
 const sharedConfig = {
 	entryPoints: ["src/index.ts"],
 	bundle: true,
 	minify: true,
-	external: Object.keys(devDependencies),
+	logLevel: "info",
 };
 
 build({
 	...sharedConfig,
 	platform: "node",
-	outfile: "lib/index.js",
+	outdir: "lib",
+	entryPoints: ["./src/index.ts"],
 });
 
 build({

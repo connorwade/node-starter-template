@@ -1,15 +1,18 @@
 {
     "compilerOptions": {
+        "emitDeclarationOnly": true,
+        "declaration": true,
         "module": "CommonJS",
-        "target": "ES2016",
+        "target": "ESNext",
+        "moduleResolution": "node",
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "strict": true,
+        "outDir": "lib",
         "skipLibCheck": true,
+        "removeComments": true,
     },
     "exclude": [
-        "node_modules",
-        "lib",
         "test"
     ]
 }
